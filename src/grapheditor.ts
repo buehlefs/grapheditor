@@ -19,19 +19,19 @@ import { D3DragEvent, drag } from 'd3-drag';
 import { select, Selection } from 'd3-selection';
 import { curveBasis } from 'd3-shape';
 import { D3ZoomEvent, zoom, ZoomBehavior, zoomIdentity, zoomTransform, ZoomTransform } from 'd3-zoom';
-import { NodeRenderer } from './rendering/node-renderer';
-import { NodeDropZone } from './drop-zone';
-import { DefaultTextComponentTemplate } from './dynamic-templates/dynamic-template';
-import { EdgePathGenerator, SmoothedEdgePathGenerator } from './dynamic-templates/edge-path-generators';
-import { DraggedEdge, Edge, edgeId, Point } from './edge';
-import { GroupingManager } from './grouping';
-import { LinkHandle } from './link-handle';
-import { Node, NodeMovementInformation } from './node';
-import { GraphObjectCache } from './object-cache';
-import { ExtrasRenderer } from './rendering/extras-renderer';
-import { DynymicTemplateRegistry, EdgePathGeneratorRegistry, StaticTemplateRegistry } from './templating';
-import { Rect, squaredPointDistance } from './util';
-import { EdgeRenderer } from './rendering/edge-renderer';
+import { NodeRenderer } from './rendering/node-renderer.js';
+import { NodeDropZone } from './drop-zone.js';
+import { DefaultTextComponentTemplate } from './dynamic-templates/dynamic-template.js';
+import { EdgePathGenerator, SmoothedEdgePathGenerator } from './dynamic-templates/edge-path-generators.js';
+import { DraggedEdge, Edge, edgeId, Point } from './edge.js';
+import { GroupingManager } from './grouping.js';
+import { LinkHandle } from './link-handle.js';
+import { Node, NodeMovementInformation } from './node.js';
+import { GraphObjectCache } from './object-cache.js';
+import { ExtrasRenderer } from './rendering/extras-renderer.js';
+import { DynymicTemplateRegistry, EdgePathGeneratorRegistry, StaticTemplateRegistry } from './templating.js';
+import { Rect, squaredPointDistance } from './util.js';
+import { EdgeRenderer } from './rendering/edge-renderer.js';
 
 
 const SHADOW_DOM_TEMPLATE = `

@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-import { Node } from './node';
-import GraphEditor, { EventSource } from './grapheditor';
-import { Edge, Point } from './edge';
-import { filterDropzonesByType, calculateSquaredDistanceFromNodeToDropZone } from './drop-zone';
+import { Node } from './node.js';
+import GraphEditor, { EventSource } from './grapheditor.js';
+import { Edge, Point } from './edge.js';
+import { filterDropzonesByType, calculateSquaredDistanceFromNodeToDropZone } from './drop-zone.js';
 
 /**
  * Interface for tree information containing the root of the tree,

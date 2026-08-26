@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-import { RotationVector } from './rotation-vector';
+import { RotationVector } from './rotation-vector.js';
 
 
 /**

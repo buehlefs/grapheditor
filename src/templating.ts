@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-import { LinkHandle, calculateLinkHandleNormal, handlesForCircle, handlesForRectangle, handlesForPolygon, handlesForPath } from './link-handle';
+import { LinkHandle, calculateLinkHandleNormal, handlesForCircle, handlesForRectangle, handlesForPolygon, handlesForPath } from './link-handle.js';
 import { Selection, select } from 'd3-selection';
-import { Point, TextComponent } from './edge';
-import { LineAttachementInfo, Marker } from './marker';
-import { DynamicTemplate } from './dynamic-templates/dynamic-template';
-import { Node } from './node';
-import { EdgePathGenerator } from './dynamic-templates/edge-path-generators';
-import { Rect } from './util';
+import { Point, TextComponent } from './edge.js';
+import { LineAttachementInfo, Marker } from './marker.js';
+import { DynamicTemplate } from './dynamic-templates/dynamic-template.js';
+import { Node } from './node.js';
+import { EdgePathGenerator } from './dynamic-templates/edge-path-generators.js';
+import { Rect } from './util.js';
 
 type AnyTemplate = DynamicTemplate<Node>|DynamicTemplate<Marker|LinkHandle>|DynamicTemplate<TextComponent>;
 

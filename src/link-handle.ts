@@ -15,8 +15,8 @@
  * limitations under the License.
  */
 
-import { RotationVector, normalizeVector, RotationData } from './rotation-vector';
-import { Point } from './edge';
+import { RotationVector, normalizeVector, RotationData } from './rotation-vector.js';
+import { Point } from './edge.js';
 
 /**
  * Start- or End-Point of edge.

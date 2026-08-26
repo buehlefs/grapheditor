@@ -16,7 +16,7 @@
  */
 
 import { Selection } from 'd3-selection';
-import { Point } from '.';
+import { Point } from './index.js';
 
 /**
  * Interface compatible with DOMRect and SVGRect.

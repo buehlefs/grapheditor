@@ -17,17 +17,17 @@
 
 import { D3DragEvent, drag } from 'd3-drag';
 import { select, Selection } from 'd3-selection';
-import { NodeDragBehaviour, EventSource, Point, DraggedEdge, Marker } from '..';
-import { DynamicMarkerTemplate, DynamicNodeTemplate } from '../dynamic-templates/dynamic-template';
-import GraphEditor from '../grapheditor';
-import { LinkHandle } from '../link-handle';
-import { getNodeLinkHandles } from '../link-handle-helper';
-import { calculateRotationTransformationAngle } from '../rotation-vector';
-import { recursiveAttributeGet } from '../util';
-import { wrapText } from '../textwrap';
-import { NodeDropZone } from '../drop-zone';
-import { GraphObjectCache } from '../object-cache';
-import { Node, NodeMovementInformation } from '../node';
+import { NodeDragBehaviour, EventSource, Point, DraggedEdge, Marker } from '../index.js';
+import { DynamicMarkerTemplate, DynamicNodeTemplate } from '../dynamic-templates/dynamic-template.js';
+import GraphEditor from '../grapheditor.js';
+import { LinkHandle } from '../link-handle.js';
+import { getNodeLinkHandles } from '../link-handle-helper.js';
+import { calculateRotationTransformationAngle } from '../rotation-vector.js';
+import { recursiveAttributeGet } from '../util.js';
+import { wrapText } from '../textwrap.js';
+import { NodeDropZone } from '../drop-zone.js';
+import { GraphObjectCache } from '../object-cache.js';
+import { Node, NodeMovementInformation } from '../node.js';
 
 /**
  * Class handling the rendering of nodes to the svg dom.

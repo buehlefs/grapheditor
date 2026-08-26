@@ -17,17 +17,16 @@
 
 import { drag } from 'd3-drag';
 import { select, Selection } from 'd3-selection';
-import { DraggedEdge, Edge, EdgeDragHandle, edgeId, EventSource, Node, normalizePositionOnLine, setDefaultEdgeDragHandles, TextComponent } from '..';
-import { DynamicMarkerTemplate, DynamicTextComponentTemplate } from '../dynamic-templates/dynamic-template';
-import GraphEditor from '../grapheditor';
-import { applyUserLinkHandleCalculationCallback, calculateNearestHandles, getNodeLinkHandles } from '../link-handle-helper';
-import { LineAttachementInfo, Marker } from '../marker';
-import { GraphObjectCache } from '../object-cache';
-import { wrapText } from '../textwrap';
-import { calculateAbsolutePositionOnLine, Rect, recursiveAttributeGet } from '../util';
-import { Point, PathPositionRotationAndScale } from '..';
-import { calculateAngle, calculateRotationTransformationAngle, normalizeVector, RotationVector } from '../rotation-vector';
-import { LinkHandle } from '../link-handle';
+import { DraggedEdge, Edge, EdgeDragHandle, edgeId, EventSource, Node, normalizePositionOnLine, setDefaultEdgeDragHandles, TextComponent, Point, PathPositionRotationAndScale } from '../index.js';
+import { DynamicMarkerTemplate, DynamicTextComponentTemplate } from '../dynamic-templates/dynamic-template.js';
+import GraphEditor from '../grapheditor.js';
+import { applyUserLinkHandleCalculationCallback, calculateNearestHandles, getNodeLinkHandles } from '../link-handle-helper.js';
+import { LineAttachementInfo, Marker } from '../marker.js';
+import { GraphObjectCache } from '../object-cache.js';
+import { wrapText } from '../textwrap.js';
+import { calculateAbsolutePositionOnLine, Rect, recursiveAttributeGet } from '../util.js';
+import { calculateAngle, calculateRotationTransformationAngle, normalizeVector, RotationVector } from '../rotation-vector.js';
+import { LinkHandle } from '../link-handle.js';
 
 
 /**

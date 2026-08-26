@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-import { LinkHandle } from './link-handle';
-import { Marker } from './marker';
-import { RotationData } from './rotation-vector';
+import { LinkHandle } from './link-handle.js';
+import { Marker } from './marker.js';
+import { RotationData } from './rotation-vector.js';
 
 /**
  * A single point.

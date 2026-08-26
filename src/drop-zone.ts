@@ -15,8 +15,8 @@
  * limitations under the License.
  */
 
-import { Rect } from './util';
-import { Point } from './edge';
+import { Rect } from './util.js';
+import { Point } from './edge.js';
 
 
 /**

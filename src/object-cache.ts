@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-import { Node } from './node';
-import { Edge, edgeId } from './edge';
-import { NodeDropZone } from './drop-zone';
-import { Rect } from './util';
+import { Node } from './node.js';
+import { Edge, edgeId } from './edge.js';
+import { NodeDropZone } from './drop-zone.js';
+import { Rect } from './util.js';
 
 /**
  * A cache for fast access of graph objects.

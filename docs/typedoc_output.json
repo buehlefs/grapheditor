@@ -1086,7 +1086,7 @@
             "exported_from": [
                 "textwrap"
             ],
-            "line": 699,
+            "line": 738,
             "documentation_root": true,
             "is_abstract": false,
             "is_optional": false,
@@ -1251,7 +1251,7 @@
             "exported_from": [
                 "textwrap"
             ],
-            "line": 377,
+            "line": 400,
             "documentation_root": true,
             "is_abstract": false,
             "is_optional": false,
@@ -1319,6 +1319,34 @@
                             "type": "intrinsic"
                         }
                     ]
+                },
+                {
+                    "name": "taskQueue",
+                    "has_default": true,
+                    "default": "null",
+                    "is_variadic": false,
+                    "description": [
+                        {
+                            "type": "text",
+                            "text": "an optional array to put in textwrapping tasks to delay them for\n    batch processing at a later point in time. The calling function is responsible\n    for executing the tasks put into the task queue! If no queue is provided, tasks\n    will be executed immediately."
+                        }
+                    ],
+                    "type": [
+                        "(",
+                        "(",
+                        ") => ",
+                        {
+                            "name": "void",
+                            "type": "intrinsic"
+                        },
+                        ")",
+                        "[]",
+                        " | ",
+                        {
+                            "name": "null",
+                            "type": "intrinsic"
+                        }
+                    ]
                 }
             ],
             "type_params": [],
@@ -1358,7 +1386,7 @@
             "exported_from": [
                 "textwrap"
             ],
-            "line": 1068,
+            "line": 1103,
             "documentation_root": true,
             "is_abstract": false,
             "is_optional": false,
@@ -1542,7 +1570,7 @@
             "exported_from": [
                 "textwrap"
             ],
-            "line": 460,
+            "line": 499,
             "documentation_root": true,
             "is_abstract": false,
             "is_optional": false,
@@ -1609,7 +1637,7 @@
             "exported_from": [
                 "textwrap"
             ],
-            "line": 914,
+            "line": 953,
             "documentation_root": true,
             "is_abstract": false,
             "is_optional": false,
@@ -1713,7 +1741,7 @@
             "exported_from": [
                 "textwrap"
             ],
-            "line": 469,
+            "line": 508,
             "documentation_root": true,
             "is_abstract": false,
             "is_optional": false,
@@ -1788,7 +1816,7 @@
             "exported_from": [
                 "textwrap"
             ],
-            "line": 887,
+            "line": 926,
             "documentation_root": true,
             "is_abstract": false,
             "is_optional": false,
@@ -1913,7 +1941,7 @@
             "exported_from": [
                 "textwrap"
             ],
-            "line": 478,
+            "line": 517,
             "documentation_root": true,
             "is_abstract": false,
             "is_optional": false,
@@ -2081,7 +2109,7 @@
             "exported_from": [
                 "textwrap"
             ],
-            "line": 934,
+            "line": 973,
             "documentation_root": true,
             "is_abstract": false,
             "is_optional": false,
@@ -2226,7 +2254,7 @@
             "exported_from": [
                 "textwrap"
             ],
-            "line": 985,
+            "line": 1025,
             "documentation_root": true,
             "is_abstract": false,
             "is_optional": false,
@@ -2282,7 +2310,7 @@
                     ]
                 },
                 {
-                    "name": "height",
+                    "name": "props",
                     "has_default": false,
                     "default": {
                         "_no_default": true
@@ -2291,53 +2319,16 @@
                     "description": [
                         {
                             "type": "text",
-                            "text": "max height"
+                            "text": "the current text properties"
                         }
                     ],
                     "type": [
                         {
-                            "name": "number",
-                            "type": "intrinsic"
-                        }
-                    ]
-                },
-                {
-                    "name": "x",
-                    "has_default": false,
-                    "default": {
-                        "_no_default": true
-                    },
-                    "is_variadic": false,
-                    "description": [
-                        {
-                            "type": "text",
-                            "text": "x coordinate"
-                        }
-                    ],
-                    "type": [
-                        {
-                            "name": "number",
-                            "type": "intrinsic"
-                        }
-                    ]
-                },
-                {
-                    "name": "y",
-                    "has_default": false,
-                    "default": {
-                        "_no_default": true
-                    },
-                    "is_variadic": false,
-                    "description": [
-                        {
-                            "type": "text",
-                            "text": "y coordinate"
-                        }
-                    ],
-                    "type": [
-                        {
-                            "name": "number",
-                            "type": "intrinsic"
+                            "name": "TextProperties",
+                            "path": [
+                                "textwrap"
+                            ],
+                            "type": "internal"
                         }
                     ]
                 },
@@ -15119,7 +15110,7 @@
                         "rendering/",
                         "node-renderer"
                     ],
-                    "line": 649,
+                    "line": 658,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -15216,7 +15207,7 @@
                         "rendering/",
                         "node-renderer"
                     ],
-                    "line": 541,
+                    "line": 550,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -15401,7 +15392,7 @@
                         "rendering/",
                         "node-renderer"
                     ],
-                    "line": 461,
+                    "line": 470,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -15573,7 +15564,7 @@
                         "rendering/",
                         "node-renderer"
                     ],
-                    "line": 417,
+                    "line": 426,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -15691,7 +15682,7 @@
                         "rendering/",
                         "node-renderer"
                     ],
-                    "line": 590,
+                    "line": 599,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -15829,7 +15820,7 @@
                         "rendering/",
                         "node-renderer"
                     ],
-                    "line": 796,
+                    "line": 805,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -15932,7 +15923,7 @@
                         "rendering/",
                         "node-renderer"
                     ],
-                    "line": 816,
+                    "line": 825,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -16013,7 +16004,7 @@
                         "rendering/",
                         "node-renderer"
                     ],
-                    "line": 758,
+                    "line": 767,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -16174,7 +16165,7 @@
                         "rendering/",
                         "node-renderer"
                     ],
-                    "line": 705,
+                    "line": 714,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -16335,7 +16326,7 @@
                         "rendering/",
                         "node-renderer"
                     ],
-                    "line": 298,
+                    "line": 305,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -16453,7 +16444,7 @@
                         "rendering/",
                         "node-renderer"
                     ],
-                    "line": 366,
+                    "line": 375,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -16544,7 +16535,7 @@
                         "rendering/",
                         "node-renderer"
                     ],
-                    "line": 323,
+                    "line": 330,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -16699,7 +16690,7 @@
                         "rendering/",
                         "node-renderer"
                     ],
-                    "line": 283,
+                    "line": 290,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -16881,7 +16872,7 @@
                         "rendering/",
                         "node-renderer"
                     ],
-                    "line": 344,
+                    "line": 353,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -16945,10 +16936,59 @@
                             "has_default": true,
                             "default": "false",
                             "is_variadic": false,
-                            "description": [],
+                            "description": [
+                                {
+                                    "type": "text",
+                                    "text": "set this to true to force textwrapping (see "
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "{@link wrapText}"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": ")"
+                                }
+                            ],
                             "type": [
                                 {
                                     "name": "boolean",
+                                    "type": "intrinsic"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "taskQueue",
+                            "has_default": true,
+                            "default": "null",
+                            "is_variadic": false,
+                            "description": [
+                                {
+                                    "type": "text",
+                                    "text": "provide a taskQueue to delay textWrapping (see "
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "{@link wrapText}"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": ")"
+                                }
+                            ],
+                            "type": [
+                                "(",
+                                "(",
+                                ") => ",
+                                {
+                                    "name": "void",
+                                    "type": "intrinsic"
+                                },
+                                ")",
+                                "[]",
+                                " | ",
+                                {
+                                    "name": "null",
                                     "type": "intrinsic"
                                 }
                             ]
@@ -17018,7 +17058,7 @@
                 "rendering/",
                 "node-renderer"
             ],
-            "line": 344,
+            "line": 353,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -17082,10 +17122,59 @@
                     "has_default": true,
                     "default": "false",
                     "is_variadic": false,
-                    "description": [],
+                    "description": [
+                        {
+                            "type": "text",
+                            "text": "set this to true to force textwrapping (see "
+                        },
+                        {
+                            "type": "text",
+                            "text": "{@link wrapText}"
+                        },
+                        {
+                            "type": "text",
+                            "text": ")"
+                        }
+                    ],
                     "type": [
                         {
                             "name": "boolean",
+                            "type": "intrinsic"
+                        }
+                    ]
+                },
+                {
+                    "name": "taskQueue",
+                    "has_default": true,
+                    "default": "null",
+                    "is_variadic": false,
+                    "description": [
+                        {
+                            "type": "text",
+                            "text": "provide a taskQueue to delay textWrapping (see "
+                        },
+                        {
+                            "type": "text",
+                            "text": "{@link wrapText}"
+                        },
+                        {
+                            "type": "text",
+                            "text": ")"
+                        }
+                    ],
+                    "type": [
+                        "(",
+                        "(",
+                        ") => ",
+                        {
+                            "name": "void",
+                            "type": "intrinsic"
+                        },
+                        ")",
+                        "[]",
+                        " | ",
+                        {
+                            "name": "null",
                             "type": "intrinsic"
                         }
                     ]
@@ -17213,7 +17302,7 @@
                 "rendering/",
                 "node-renderer"
             ],
-            "line": 283,
+            "line": 290,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -17304,7 +17393,7 @@
                 "rendering/",
                 "node-renderer"
             ],
-            "line": 323,
+            "line": 330,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -17459,7 +17548,7 @@
                 "rendering/",
                 "node-renderer"
             ],
-            "line": 366,
+            "line": 375,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -17550,7 +17639,7 @@
                 "rendering/",
                 "node-renderer"
             ],
-            "line": 298,
+            "line": 305,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -17668,7 +17757,7 @@
                 "rendering/",
                 "node-renderer"
             ],
-            "line": 705,
+            "line": 714,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -17829,7 +17918,7 @@
                 "rendering/",
                 "node-renderer"
             ],
-            "line": 758,
+            "line": 767,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -17990,7 +18079,7 @@
                 "rendering/",
                 "node-renderer"
             ],
-            "line": 816,
+            "line": 825,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -18071,7 +18160,7 @@
                 "rendering/",
                 "node-renderer"
             ],
-            "line": 796,
+            "line": 805,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -18174,7 +18263,7 @@
                 "rendering/",
                 "node-renderer"
             ],
-            "line": 590,
+            "line": 599,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -18312,7 +18401,7 @@
                 "rendering/",
                 "node-renderer"
             ],
-            "line": 417,
+            "line": 426,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -18439,7 +18528,7 @@
                 "rendering/",
                 "node-renderer"
             ],
-            "line": 461,
+            "line": 470,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -18620,7 +18709,7 @@
                 "rendering/",
                 "node-renderer"
             ],
-            "line": 541,
+            "line": 550,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -18805,7 +18894,7 @@
                 "rendering/",
                 "node-renderer"
             ],
-            "line": 649,
+            "line": 658,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -21603,7 +21692,7 @@
                     "rendering/",
                     "edge-renderer"
                 ],
-                "line": 50,
+                "line": 49,
                 "documentation_root": false,
                 "is_abstract": false,
                 "is_optional": false,
@@ -21710,7 +21799,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 41,
+                    "line": 40,
                     "documentation_root": false,
                     "readonly": false,
                     "kind": "attribute"
@@ -21750,7 +21839,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 42,
+                    "line": 41,
                     "documentation_root": false,
                     "readonly": false,
                     "kind": "attribute"
@@ -21798,7 +21887,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 385,
+                    "line": 396,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -21916,7 +22005,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 574,
+                    "line": 585,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -22065,7 +22154,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 434,
+                    "line": 445,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -22205,7 +22294,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 460,
+                    "line": 471,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -22355,7 +22444,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 75,
+                    "line": 74,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -22485,7 +22574,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 1103,
+                    "line": 1114,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -22586,7 +22675,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 1133,
+                    "line": 1144,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -22714,7 +22803,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 60,
+                    "line": 59,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -22772,7 +22861,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 1297,
+                    "line": 1308,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -22874,7 +22963,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 1352,
+                    "line": 1363,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -22961,7 +23050,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 1392,
+                    "line": 1403,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -23064,7 +23153,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 1419,
+                    "line": 1430,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -23191,7 +23280,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 1439,
+                    "line": 1450,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -23288,7 +23377,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 410,
+                    "line": 421,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -23462,7 +23551,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 1216,
+                    "line": 1227,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -23554,7 +23643,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 123,
+                    "line": 122,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -23593,7 +23682,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 203,
+                    "line": 202,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -23708,7 +23797,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 149,
+                    "line": 148,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -23821,7 +23910,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 106,
+                    "line": 105,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -23912,7 +24001,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 179,
+                    "line": 178,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -24067,7 +24156,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 510,
+                    "line": 521,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -24167,7 +24256,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 614,
+                    "line": 625,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -24258,7 +24347,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 483,
+                    "line": 494,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -24349,7 +24438,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 294,
+                    "line": 293,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -24482,7 +24571,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 741,
+                    "line": 752,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -24597,7 +24686,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 1075,
+                    "line": 1086,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -24761,7 +24850,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 979,
+                    "line": 990,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -25040,7 +25129,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 947,
+                    "line": 958,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -25155,7 +25244,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 1062,
+                    "line": 1073,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -25270,7 +25359,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 1034,
+                    "line": 1045,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -25385,7 +25474,7 @@
                         "rendering/",
                         "edge-renderer"
                     ],
-                    "line": 918,
+                    "line": 929,
                     "documentation_root": false,
                     "is_abstract": false,
                     "is_optional": false,
@@ -25479,7 +25568,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 39,
+            "line": 38,
             "documentation_root": true,
             "kind": "class"
         },
@@ -25509,7 +25598,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 918,
+            "line": 929,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -25600,7 +25689,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 1034,
+            "line": 1045,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -25715,7 +25804,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 1062,
+            "line": 1073,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -25830,7 +25919,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 947,
+            "line": 958,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -25945,7 +26034,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 979,
+            "line": 990,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -26224,7 +26313,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 1075,
+            "line": 1086,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -26388,7 +26477,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 741,
+            "line": 752,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -26503,7 +26592,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 294,
+            "line": 293,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -26636,7 +26725,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 483,
+            "line": 494,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -26727,7 +26816,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 614,
+            "line": 625,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -26818,7 +26907,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 510,
+            "line": 521,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -26918,7 +27007,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 179,
+            "line": 178,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -27073,7 +27162,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 106,
+            "line": 105,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -27164,7 +27253,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 149,
+            "line": 148,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -27277,7 +27366,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 203,
+            "line": 202,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -27392,7 +27481,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 123,
+            "line": 122,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -27431,7 +27520,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 1216,
+            "line": 1227,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -27532,7 +27621,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 410,
+            "line": 421,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -27706,7 +27795,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 1439,
+            "line": 1450,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -27794,7 +27883,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 1419,
+            "line": 1430,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -27930,7 +28019,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 1392,
+            "line": 1403,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -28033,7 +28122,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 1352,
+            "line": 1363,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -28111,7 +28200,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 1297,
+            "line": 1308,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -28222,7 +28311,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 60,
+            "line": 59,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -28280,7 +28369,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 1133,
+            "line": 1144,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -28399,7 +28488,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 1103,
+            "line": 1114,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -28500,7 +28589,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 75,
+            "line": 74,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -28630,7 +28719,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 460,
+            "line": 471,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -28780,7 +28869,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 434,
+            "line": 445,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -28920,7 +29009,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 574,
+            "line": 585,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -29086,7 +29175,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 385,
+            "line": 396,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,
@@ -29213,7 +29302,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 42,
+            "line": 41,
             "documentation_root": false,
             "readonly": false,
             "kind": "attribute"
@@ -29262,7 +29351,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 41,
+            "line": 40,
             "documentation_root": false,
             "readonly": false,
             "kind": "attribute"
@@ -29293,7 +29382,7 @@
                 "rendering/",
                 "edge-renderer"
             ],
-            "line": 50,
+            "line": 49,
             "documentation_root": false,
             "is_abstract": false,
             "is_optional": false,

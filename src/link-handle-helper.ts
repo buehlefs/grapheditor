@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-import { LinkHandle } from './link-handle';
-import { Edge, DraggedEdge, Point, edgeId } from './edge';
-import { Node } from './node';
+import { LinkHandle } from './link-handle.js';
+import { Edge, DraggedEdge, Point, edgeId } from './edge.js';
+import { Node } from './node.js';
 import { Selection } from 'd3-selection';
-import { StaticTemplateRegistry, DynymicTemplateRegistry } from './templating';
-import { DynamicNodeTemplate } from './dynamic-templates/dynamic-template';
-import GraphEditor from './grapheditor';
+import { StaticTemplateRegistry, DynymicTemplateRegistry } from './templating.js';
+import { DynamicNodeTemplate } from './dynamic-templates/dynamic-template.js';
+import GraphEditor from './grapheditor.js';
 
 /**
  * Get the link handles of a node.

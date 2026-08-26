@@ -16,11 +16,11 @@
  */
 
 import { Selection } from 'd3-selection';
-import { Node } from '../node';
-import { Marker, LineAttachementInfo } from '../marker';
-import GraphEditor from '../grapheditor';
-import { LinkHandle } from '../link-handle';
-import { Edge, TextComponent } from '../edge';
+import { Node } from '../node.js';
+import { Marker, LineAttachementInfo } from '../marker.js';
+import GraphEditor from '../grapheditor.js';
+import { LinkHandle } from '../link-handle.js';
+import { Edge, TextComponent } from '../edge.js';
 
 export interface DynamicTemplateContext<T extends Node|LinkHandle|Marker|Edge|TextComponent> {
     [prop: string]: any;

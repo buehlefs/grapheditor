@@ -16,7 +16,7 @@
  */
 
 import { select, Selection } from 'd3-selection';
-import { Rect, calculateBoundingRect } from './util';
+import { Rect, calculateBoundingRect } from './util.js';
 
 /**
  * Cache for specific text measurements.

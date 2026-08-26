@@ -10,7 +10,11 @@ module.exports = {
 
     resolve: {
         // Add '.ts' and '.tsx' as resolvable extensions.
-        extensions: [".webpack.js", ".web.js", ".ts", ".js"]
+        extensions: [".webpack.js", ".web.js", ".ts", ".js"],
+        extensionAlias: {
+            ".js": [".ts", ".js"],
+            ".mjs": [".mts", ".mjs"]
+        }
     },
 
     module: {

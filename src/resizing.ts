@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-import GraphEditor from './grapheditor';
-import { EventSource } from './grapheditor';
+import GraphEditor from './grapheditor.js';
+import { EventSource } from './grapheditor.js';
 import { Selection, select } from 'd3-selection';
 import { D3DragEvent, drag } from 'd3-drag';
-import { Rect, removeAllChildNodes, copyTemplateSelectionIntoNode } from './util';
-import { Point } from './edge';
-import { Node } from './node';
-import { RotationVector } from './rotation-vector';
+import { Rect, removeAllChildNodes, copyTemplateSelectionIntoNode } from './util.js';
+import { Point } from './edge.js';
+import { Node } from './node.js';
+import { RotationVector } from './rotation-vector.js';
 
 /**
  * A strategy to apply the new dimensions to a node when a resize happens.

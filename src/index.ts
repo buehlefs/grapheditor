@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-import GraphEditor from './grapheditor';
-export { default as GraphEditor, EventSource, NodeDragBehaviour } from './grapheditor';
-export { Node, NodeMovementInformation } from './node';
+import GraphEditor from './grapheditor.js';
+export { default as GraphEditor, EventSource, NodeDragBehaviour } from './grapheditor.js';
+export { Node, NodeMovementInformation } from './node.js';
 export {
     Edge,
     DraggedEdge,
@@ -28,11 +28,11 @@ export {
     edgeId,
     normalizePositionOnLine,
     setDefaultEdgeDragHandles,
-} from './edge';
-export { Marker } from './marker';
-export { LinkHandle, calculateLinkHandleNormal, handlesForRectangle, handlesForCircle, handlesForPolygon, handlesForPath } from './link-handle';
-export { ResizingManager, DefaultResizeStrategy, ResizeStrategy, ResizeOverlayOptions } from './resizing';
-export { wrapText, wrapTextLines, wrapSingleLine } from './textwrap';
+} from './edge.js';
+export { Marker } from './marker.js';
+export { LinkHandle, calculateLinkHandleNormal, handlesForRectangle, handlesForCircle, handlesForPolygon, handlesForPath } from './link-handle.js';
+export { ResizingManager, DefaultResizeStrategy, ResizeStrategy, ResizeOverlayOptions } from './resizing.js';
+export { wrapText, wrapTextLines, wrapSingleLine } from './textwrap.js';
 
 
 if (window.customElements.get('network-graph') == null) {

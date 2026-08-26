@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-import { DynamicNodeTemplate, DynamicTemplateContext } from './dynamic-template';
-import { handlesForRectangle, LinkHandle } from '../link-handle';
+import { DynamicNodeTemplate, DynamicTemplateContext } from './dynamic-template.js';
+import { handlesForRectangle, LinkHandle } from '../link-handle.js';
 import { Selection } from 'd3-selection';
-import { Node } from '../node';
-import GraphEditor from '../grapheditor';
+import { Node } from '../node.js';
+import GraphEditor from '../grapheditor.js';
 
 /**
  * Example dynamic node template rendering a `rect` centered around (0, 0).

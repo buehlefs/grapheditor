@@ -37,12 +37,11 @@
     "start": "webpack serve --config webpack-dev.config.js",
     "lint": "eslint --ext=.ts",
     "lint-all": "eslint --ext=.ts .",
-    "doc": "typedoc --exclude **/node_modules/**/*.* --exclude **/lib/**/* --exclude **/lib-esm/**/* --externalPattern **/node_modules/**/* --excludeExternals --entryPoints ./src/* --entryPointStrategy expand ./src --emit docs --out typedoc --json docs/typedoc.json",
-    "clean": "rm -rf _bundles lib lib-esm",
+    "doc": "typedoc --exclude **/node_modules/**/*.* --exclude **/lib/**/* --externalPattern **/node_modules/**/* --excludeExternals --entryPoints ./src/* --entryPointStrategy expand ./src --emit docs --out typedoc --json docs/typedoc.json",
+    "clean": "rm -rf _bundles lib",
     "package": "tsc",
-    "package-es6": "tsc -m es6 --outDir lib-esm",
     "package-bundle": "webpack --mode production",
-    "package-all": "npm run clean && npm run package && npm run package-es6 && npm run package-bundle"
+    "package-all": "npm run clean && npm run package && npm run package-bundle"
   },
   "dependencies": {
     "d3-drag": "^3.0.0",

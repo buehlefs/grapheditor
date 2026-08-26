@@ -15,8 +15,8 @@
  * limitations under the License.
  */
 
-import { angleToVector, calculateAngle, calculateLength, RotationVector } from './rotation-vector';
-import { PathPositionRotationAndScale, Point } from './edge';
+import { angleToVector, calculateAngle, calculateLength, RotationVector } from './rotation-vector.js';
+import { PathPositionRotationAndScale, Point } from './edge.js';
 
 /**
  * Interface describing an edge marker.

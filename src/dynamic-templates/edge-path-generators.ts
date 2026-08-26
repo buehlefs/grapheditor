@@ -16,8 +16,8 @@
  */
 
 import { line, Line, CurveFactory, CurveFactoryLineOnly, curveLinear } from 'd3-shape';
-import { Point } from '../edge';
-import { RotationVector } from '../rotation-vector';
+import { Point } from '../edge.js';
+import { RotationVector } from '../rotation-vector.js';
 
 /**
  * Interface for edge path generators.
