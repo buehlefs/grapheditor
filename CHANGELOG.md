@@ -7,6 +7,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
+
+## [1.0.0] - 2026-08-26
+
 ### Refactored
 
 - Refactored text wrapping code to use offscreen canvas to measure text
@@ -20,6 +23,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Incompatible changes
 
 - Updated to TypeScript 6 compiler
+- Updated package build to always output esmodules (bundled javascript output is still available)
 
 
 ## [0.7.0] - 2024-01-10
@@ -389,7 +393,8 @@ First beta version.
 - Initial webcomponent
 - Documentation
 
-[Unreleased]: https://github.com/UST-MICO/grapheditor/compare/v0.7.0...HEAD
+[Unreleased]: https://github.com/UST-MICO/grapheditor/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/UST-MICO/grapheditor/compare/v0.7.0...v1.0.0
 [0.7.0]: https://github.com/UST-MICO/grapheditor/compare/v0.6.2...v0.7.0
 [0.6.2]: https://github.com/UST-MICO/grapheditor/compare/v0.6.1...v0.6.2
 [0.6.1]: https://github.com/UST-MICO/grapheditor/compare/v0.6.0...v0.6.1
