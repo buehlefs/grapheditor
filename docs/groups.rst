@@ -24,12 +24,12 @@ They are matched to the nodes by their id.
     groupManager.markAsTreeRoot(1);
     // add node 2 to the group of node 1
     // node 2 is also joined to the tree of node 1
-    groupManager.addToGroup(1, 2);
+    groupManager.addNodeToGroup(1, 2);
 
     // group ids are independent of node ids
     // node 3 can join the group of node 1 before
     // node 3 is actually added to the grapheditor
-    groupManager.addToGroup(1, 3);
+    groupManager.addNodeToGroup(1, 3);
 
     g.addNode({ id: 3, title: 'A-2', type: 'simple-node', x: 50, y: 50 });
 
