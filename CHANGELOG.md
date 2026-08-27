@@ -8,6 +8,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ## [Unreleased]
 
 
+## [1.0.1]
+
+Same as 1.0.0, but with a new package name and once again published on npm.
+
+
 ## [1.0.0] - 2026-08-26
 
 ### Refactored
@@ -393,7 +398,8 @@ First beta version.
 - Initial webcomponent
 - Documentation
 
-[Unreleased]: https://github.com/buehlefs/grapheditor/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/buehlefs/grapheditor/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/buehlefs/grapheditor/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/buehlefs/grapheditor/compare/v0.7.0...v1.0.0
 [0.7.0]: https://github.com/buehlefs/grapheditor/compare/v0.6.2...v0.7.0
 [0.6.2]: https://github.com/buehlefs/grapheditor/compare/v0.6.1...v0.6.2
