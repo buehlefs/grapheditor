@@ -1,5 +1,5 @@
 {
-  "name": "@ustutt/grapheditor-webcomponent",
+  "name": "grapheditor-webcomponent",
   "version": "1.0.0",
   "description": "Webcomponent for displaying and editing graphs.",
   "author": "Fabian Bühler <fabian.buehler@iaas.uni-stuttgart.de>",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/UST-MICO/grapheditor.git"
+    "url": "git+https://github.com/buehlefs/grapheditor.git"
   },
   "keywords": [
     "webcomponent",
@@ -30,9 +30,9 @@
   ],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/UST-MICO/grapheditor/issues"
+    "url": "https://github.com/buehlefs/grapheditor/issues"
   },
-  "homepage": "https://github.com/UST-MICO/grapheditor#readme",
+  "homepage": "https://github.com/buehlefs/grapheditor#readme",
   "scripts": {
     "start": "webpack serve --config webpack-dev.config.js",
     "lint": "eslint --ext=.ts",

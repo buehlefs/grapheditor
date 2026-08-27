@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=.
 set BUILDDIR=_build
-set SPHINXPROJ=MICOGrapheditorDocumentation
+set SPHINXPROJ=GrapheditorDocumentation
 
 if "%1" == "" goto help
 

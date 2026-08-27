@@ -1,6 +1,6 @@
 # Grapheditor Webcomponent
 
-This repository contains the grapheditor component developed for the mico project.
+This repository contains the grapheditor component originally developed for the mico project.
 
 The grapheditor is a standalone webcomponent to realize rich graph editors.
 It supports templates for nodes, drag and drop, styling with css classes, dynamic node content, edge markers and more.

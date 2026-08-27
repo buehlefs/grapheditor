@@ -350,8 +350,8 @@ sphinx_config = pyproject_toml["tool"].get("sphinx", {})
 
 # -- Project information -----------------------------------------------------
 
-project = 'MICO Grapheditor Documentation'
-project_urlsafe = 'MICOGrapheditorDocumentation'
+project = 'Grapheditor Documentation'
+project_urlsafe = 'GrapheditorDocumentation'
 author = package_json.get("author", ", ".join(doc_package_config.get("authors", 'Fabian Bühler')))
 copyright_year = sphinx_config.get("copyright-year", 2021)
 copyright = '{year}, {authors}'.format(year=copyright_year, authors=author)

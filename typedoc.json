@@ -1,5 +1,5 @@
 {
-    "name": "@ustutt/grapheditor-webcomponent",
+    "name": "grapheditor-webcomponent",
     "entryPoints": ["./src/index.ts"],
     "excludeExternals": true,
     "exclude": ["**/node_modules/**/*", "**/lib/**/*", "**/lib-esm/**/*"]
