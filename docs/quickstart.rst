@@ -16,7 +16,7 @@ Create a new html file with the following content:
             </style>
         </head>
         <body>
-            <script src="https://cdn.jsdelivr.net/npm/@ustutt/grapheditor-webcomponent@latest/_bundles/grapheditor-webcomponent.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/grapheditor-webcomponent@latest/_bundles/grapheditor-webcomponent.js"></script>
             <template id="graph-template">
                 <svg>
                     <style>

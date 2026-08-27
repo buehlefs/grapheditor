@@ -64,7 +64,7 @@ Features
 
 .. raw:: html
 
-    <script src="https://cdn.jsdelivr.net/npm/@ustutt/grapheditor-webcomponent@0.7.0/_bundles/grapheditor-webcomponent.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/grapheditor-webcomponent@0.7.0/_bundles/grapheditor-webcomponent.js" defer></script>
 
     <h3>Interactive Example</h3>
 
